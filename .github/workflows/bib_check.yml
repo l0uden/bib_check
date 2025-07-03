@@ -25,7 +25,7 @@ jobs:
         run: pip install uv
 
       - name: Install requirements
-        run: uv pip install pytest selenium
+        run: uv pip install --system pytest selenium
 
       - name: bib check
         run: pytest test_bib_check.py
