@@ -21,4 +21,4 @@ def browserdriver():
 
 
 def test_bib_check(browserdriver):
-    WebDriverWait(browserdriver, 20).until(expected_conditions.presence_of_element_located((By.XPATH, "//*[contains(text(), 'It's available!')]")))
+    WebDriverWait(browserdriver, 20).until(expected_conditions.presence_of_element_located((By.XPATH, "//*[contains(text(), 'There are currently no race numbers for sale. Try again later.')]")))
